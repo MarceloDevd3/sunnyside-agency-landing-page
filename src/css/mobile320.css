@@ -1,0 +1,794 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 100%;
+}
+
+
+ul {
+    list-style: none;
+}
+
+button {
+     border: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-size: 1.125em;
+    font-family: "Fraunces", serif;
+}
+
+button {
+    font-family: "Fraunces", serif;
+}
+
+:root {
+/*### Primary*/
+--Soft-red: hsl(7, 99%, 70%);
+--Yellow: hsl(51, 100%, 49%);
+--Dark-desaturated-cyan-graphic-design-text: #25564b;
+--Dark-blue-photography-text: hsl(198, 62%, 26%);
+--Dark-moderate-cyan-footer: hsl(168, 34%, 41%);
+/*### Neutral*/
+--Very-dark-desaturated-blue: hsl(212, 27%, 19%);
+--Very-dark-grayish-blue: hsl(213, 9%, 39%);
+--Dark-grayish-blue: hsl(232, 10%, 55%);
+--Grayish-blue: hsl(210, 4%, 67%);
+--White: hsl(0, 0%, 100%);
+}
+
+a,p{
+  font-family: "Barlow", sans-serif;
+}
+
+
+
+
+.sunnyside-header {
+    background:  url(./images/mobile/image-header.jpg) no-repeat;
+    background-size: 100% 100%;
+    max-width: 100% ;
+    height: 75vh;
+}
+
+.sunnyside-header .navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+}
+
+.logo > img {
+    max-width: 100%;
+    width: 90%;
+}
+
+
+.navbar .navbar-block {
+    display: none;
+}
+
+.navbar .navbar-block.active{
+    position: absolute;
+    display: block;
+    top: 100px;
+    background-color: var(--White);
+    width: 285px;
+    height: 300px;
+    padding: 2em;
+    text-align: center;
+}
+
+.navbar .navbar-block.active:after {
+    content: '';
+    display: block;
+    position: absolute;
+    clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+    top: -30px;
+    right: 0;
+    width: 30px;
+    height: 30px;
+    background-color: var(--White);
+}
+
+
+.navbar--toggle li {
+    margin: 1.5em 0;
+}
+
+.navbar-link {
+    font-weight: 600;
+    color: var(--Dark-grayish-blue);
+}
+
+.navbar-link:hover{
+opacity: 0.5;
+}
+
+li:hover {
+    opacity: .7;
+}
+
+li, i, a {
+    cursor: pointer;
+}
+
+i:hover {
+    opacity: .7;
+}
+
+
+.btn {
+    margin-top: .5em;
+    width: 100px;
+    height: 47px;
+    border-radius: 50px;
+    font-weight: 700;
+    background-color: var(--Yellow);
+}
+
+
+.btn:hover {
+    opacity: 0.7;
+}
+
+.header-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.header-info-title {
+    font-size: 1.5em;
+    margin-left: -15px;
+    padding:  2em 0;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    color: var(--White);
+}
+
+.arrow-down > img {
+    width: 25px;
+    color: var(--White);
+}
+
+
+article .img-container > img {
+    margin: 0;
+    padding: 0;
+}
+
+#Desk {
+    display: none;
+}
+
+#mobile {
+    max-width: 100%;
+}
+
+.hi {
+    text-align: center;
+    padding: 2em 1em;
+    height: 350px ;
+}
+
+.hi > .sunnySide--Agent-info {
+    padding: 0 1.2em;
+    font-size: 1.2em;
+    margin-bottom: 1.5em;
+}
+
+
+.sunnySide--Agent-info {
+    margin-bottom: 1em ;
+    color: var(--Very-dark-desaturated-blue);
+}
+
+.sunnySide--Agency-info--text {
+    color: var(--Very-dark-grayish-blue);
+    font-weight: 500;
+}
+
+.btn-more {
+    font-size: 0.9em;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.block-line {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.custom-line {
+    position: relative;
+    top: -30px;
+    width: 115px;
+    height: 9px;
+    border-radius: 50px;
+    opacity: 0.3;
+}
+
+.yellow {
+ background: var(--Yellow);
+}
+
+.pink {
+  background: var(--Soft-red);
+}
+
+
+.btn-menu {
+    background-color: transparent;
+}
+
+.btn-more {
+    margin: 1.4em 0;
+    border: none;
+    background: transparent;
+}
+
+.main-grid{
+    display: grid;
+    grid-template-areas: "G1" "G2" "G3" "G4" "G5" "G6";
+    grid-row: 370px;
+}
+
+.grid--item-1 {
+    grid-area: G1 ;
+}
+
+.grid--item-2 {
+    grid-area: G2 ;
+}
+
+.grid--item-3 {
+    grid-area:G3 ;
+}
+
+.grid--item-4 {
+    grid-area:G4 ;
+}
+
+.grid--item-5 {
+    grid-area:G5 ;
+}   
+
+.grid--item-6 {
+    grid-area:G6 ;
+} 
+
+.grid--item-5 > .img-container , .grid--item-6 > .img-container {
+    position: relative;
+}
+
+.grid--item-6 {
+    margin-top: -5px;
+}
+
+
+.info1, .info2 {
+    position: absolute;
+    top: 55%;
+    padding: 0 2em;
+    text-align: center;
+}
+
+.info2 {
+  color: var(--Dark-blue-photography-text);
+}
+
+.info1 {
+    color: var(--Dark-desaturated-cyan-graphic-design-text);
+}
+
+.transform--info--title {
+    font-size: 1.5em;
+    margin: 0.5em 0;
+}
+
+.transform--info-sub-text {
+    font-weight: 500;
+}
+
+
+.testimonials--row .testimonials--title{
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: var(--Grayish-blue);
+    margin: 1em 0;
+    font-size: .9em;
+}
+
+.testimonials--row {
+    padding: 1.5em 0;
+    padding-bottom: 0;
+    text-align: center;
+}
+
+
+
+.testimonials--container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    padding: 2em 1em;
+}
+
+.Card-test-1 , .Card-test-2, .Card-test-3 {
+    margin: 2em 0;
+    padding: 1.5em 0;
+}
+
+.sub--info {
+    margin: 1em 0;
+    font-size:.9em ;
+    line-height: 27px;
+    font-weight: 600;
+    color:var(--Very-dark-grayish-blue);
+}
+
+.profile--name {
+    margin:  1.5em auto;
+    width: 200px;
+}
+
+
+.work--class {
+    position: relative;
+    top: -15px;
+    margin: 0;
+    font-size: 0.7em;
+    font-weight: 500;
+    color: var(--Grayish-blue);
+}
+
+.circle--profile >  img {
+    max-width: 100%;
+    width: 20%;
+    border-radius: 50px;
+}
+
+
+
+.grid--img--container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+
+.grid #mobile, .grid #Desk {
+    max-width: 100%;
+    height: 100%;
+}
+
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #91d3c5;
+    padding: 1em ;
+}
+
+footer .footer--logo img { 
+    margin: 1em 0;
+}
+
+footer ul {
+    display: flex;
+    margin: 1em 0;
+}
+
+footer ul li {
+    margin: 0 1em;
+}
+
+footer ul li a {
+    color: var(--Dark-desaturated-cyan-graphic-design-text);
+}
+
+.row-icons {
+    display: flex;
+    padding: 1.5em 0;
+}
+
+.row-icons div i {
+    margin: 0 1em;
+    color: var(--Dark-desaturated-cyan-graphic-design-text);
+}
+
+
+/*mobile 375*/
+
+@media (min-width: 375px) {
+    .sunnyside-header {
+    background-size: 100% 100%;
+    height: 90vh;
+  }
+
+.sunnyside-header .navbar {
+    display: flex;
+    padding: 1.5em;
+}
+
+.navbar .navbar-block.active{
+    position: absolute;
+    display: block;
+    top: 100px;
+    width: 430px;
+    height: 350px;
+}
+
+.navbar--toggle li {
+    margin: 1.7em 0;
+}
+
+.logo > img {
+    width: 100%;
+}
+
+.header-info-title {
+    font-size: 2.7em;
+    padding:  1em 2em;
+    margin-left: 15px;
+    letter-spacing: 7px;
+}
+
+.arrow-down > img {
+    width: 47px;
+    color: var(--White);
+}
+
+
+.hi {
+    padding: 5.5em 2.5em;
+    height: 400px ;
+}
+
+.info1, .info2 {
+    top: 70%;
+    padding: 0 2.7em;
+}
+
+.transform--info--title {
+    font-size: 1.7em;
+    margin-bottom: 0.5em;
+}
+
+.transform--info-sub-text {
+    line-height: 27px;
+}
+
+
+.hi > .sunnySide--Agent-info {
+    padding: 0 1.5em;
+    font-size: 1.7em;
+}
+
+.circle--profile >  img {
+    width: 15%;
+}
+
+
+.sub--info {
+    padding: 0 3.7em ;
+}
+
+
+}
+
+
+/*table*/
+
+@media (min-width:1024px) {
+   
+
+
+    .header-info-title {
+        font-size: 3em;
+        padding:  1em 4em;
+        margin-left: 15px;
+        letter-spacing: 7px;
+    } 
+
+    .btn-menu {
+        display: none;
+    }
+
+    .navbar .navbar-block.active, .navbar .navbar-block{
+        position: absolute;
+        right: 0;
+        display: flex;
+        justify-content: flex-end;
+        flex-wrap: nowrap;
+        background-color: transparent;
+        top: -3px;
+        width: 500px;
+        height: 350px;
+    }
+
+    .navbar--toggle  {
+        display: flex;
+    }
+
+    .navbar .navbar-block.active:after {
+        display: none;
+    }
+    
+    .navbar--toggle li {
+        margin: 0 1em;
+    }
+
+    .navbar-link {
+        color: var(--White);
+    }
+
+    .btn {
+        margin-top: -.5em;
+        margin-left: 1rem;
+        width: 100px;
+        height: 45px;
+        border-radius: 50px;
+        background-color: var(--White);
+    }
+    
+    
+
+    .main-grid{
+        display: grid;
+        grid-template-areas: "G2 G1" "G3 G4" "G5 G6";
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        max-width:  100%;
+    }
+
+    .img-container > img {
+        width: 100%;
+    }
+
+    #Desk {
+        display: block;
+    }
+
+    
+    #mobile {
+      display: none;
+    }
+
+
+
+    .grid--item-1 {
+        grid-area: G1 ;
+        order: 1;
+    }
+    
+    .grid--item-2 {
+        grid-area: G2 ;
+        order: 0;
+    }
+
+    .grid--item-6 {
+        margin-top: 0;
+    }
+
+
+    .hi {
+        text-align: left;
+        padding: 4rem 5.5rem;
+        height: 350px ;
+    }
+    
+    
+    .hi > .sunnySide--Agent-info {
+        padding: 0 1.2em 0 0;
+        font-size: 2.2em;
+        margin-bottom: 0.5em;
+        
+    }
+
+    .sunnySide--Agency-info--text {
+        width: 350px;
+        line-height:30px;
+    }
+
+    
+.info1, .info2 {
+    position: absolute;
+    top: 57%;
+}
+
+    .testimonials--row {
+        padding: 4em 0;
+    }
+
+    .grid #mobile, .grid #Desk {
+        max-width: 100.5%;
+        height: 100%;
+    }
+
+    .circle--profile >  img {
+        width: 15%;
+    }
+
+
+
+    .testimonials--container {
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+        grid-template-rows: 1fr 1fr;
+        padding: 2em 1em;
+    }
+
+    .grid--img--container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    .testimonials--row .testimonials--title {
+        font-size: 1.7em;
+    }
+    
+
+    .Card-test-1,
+     .Card-test-2, 
+     .Card-test-3 {
+        padding: 2em 1rem;
+     }
+
+     .Card-test-3 {
+        position: relative;
+        left: 50%;
+     }
+
+     .testimonials--row .testimonials--title{
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        color: var(--Grayish-blue);
+        margin: 1.5em 0;
+        font-size: 1.7em !important;
+    }
+
+     footer {
+        padding: 2em  0;
+    }
+
+    .grid #Desk {
+        width: 100%;
+        height: 65vh;
+    }
+
+    
+    footer .footer--logo img { 
+        margin: 1em 0;
+        width: 225px;
+    }
+
+    .block-line {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    
+    
+    
+    
+}
+/*notebook*/
+
+@media (min-width:1366px) {
+
+    body {
+        overflow-x: hidden;
+       }
+    .sunnyside-header {
+        background:  url(./images/desktop/image-header.jpg) no-repeat;
+        background-size: 100% 100%;
+        max-width: 100% !important;
+        height: 100vh;
+    }
+
+
+    .hi {
+        padding: 8rem 5.5rem;
+    }
+    .arrow-down > img {
+        margin-top: 2.7em;
+        width: 30px;
+    }
+
+     .grid #Desk {
+        max-width: 100%;
+    }
+
+
+    
+
+    .testimonials--container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr ;
+        grid-template-rows: 1fr;
+        padding:7em 0;
+    }
+
+    .Card-test-3 {
+        position: relative;
+        left: 0;
+     }
+
+     
+
+   
+    
+    .testimonials--row {
+        padding:  0;
+    }
+
+    
+    .testimonials--row .testimonials--title {
+        margin: 1.5em 0;
+        font-size: 2em;
+    }
+    
+
+    .Card-test-1,
+     .Card-test-2, 
+     .Card-test-3 {
+        margin: 0;
+        margin-top: -55px;
+        padding: 0 1rem;
+     }
+
+    
+}
+
+/*desktop*/
+
+@media (min-width:1440px) {
+    .sunnyside-header .navbar {
+        padding: 2.5em 2em;
+    }
+
+    .logo > img {
+        width: 175px;
+    }
+
+
+    .grid--img--container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+    
+.header-info-title {
+    margin-top: 1em;
+    font-size: 4em;
+    margin-left: 0;
+    padding: .5em 0;
+}
+
+.arrow-down > img {
+    width: 45px;
+    color: var(--White);
+}
+
+}
+
+
+
+
+
