@@ -62,20 +62,20 @@ export default function TestimonialsSection() {
             </section>
             <section className='grid--img--container'>
                  <div className=' grid grid-img--area1'>
-                    <img src={img2Mobile}  alt="banner--img" id="mobile"/>
-                    <img src={img2Desk}  alt="banner--img" id="Desk"/>
+                    <img src={img2Mobile}  alt="banner--img" className="mobile"/>
+                    <img src={img2Desk}  alt="banner--img" className="Desk"/>
                  </div>
                  <div className='grid grid-img--area2'>
-                    <img src={img3Mobile}  alt="banner--img" id="mobile"/>
-                    <img src={img3Desk}  alt="banner--img" id="Desk"/>
+                    <img src={img3Mobile}  alt="banner--img" className="mobile"/>
+                    <img src={img3Desk}  alt="banner--img" className="Desk"/>
                  </div>
                  <div className='grid grid-img--area3'>
-                    <img src={img1Mobile}  alt="banner--img" id="mobile"/>
-                    <img src={img1Desk}  alt="banner--img" id="Desk"/>
+                    <img src={img1Mobile}  alt="banner--img" className="mobile"/>
+                    <img src={img1Desk}  alt="banner--img" className="Desk"/>
                  </div>
                  <div className='grid grid-img--area4'>
-                    <img src={img4Mobile}  alt="banner--img" id="mobile"/>
-                    <img src={img4Desk}  alt="banner--img" id="Desk"/>
+                    <img src={img4Mobile}  alt="banner--img" className="mobile"/>
+                    <img src={img4Desk}  alt="banner--img" className="Desk"/>
                  </div>
             </section>
         </div>

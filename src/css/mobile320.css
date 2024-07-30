@@ -164,11 +164,11 @@ article .img-container > img {
     padding: 0;
 }
 
-#Desk {
+.Desk {
     display: none;
 }
 
-#mobile {
+.mobile {
     max-width: 100%;
 }
 
@@ -367,7 +367,7 @@ article .img-container > img {
 }
 
 
-.grid #mobile, .grid #Desk {
+.grid .mobile, .grid .Desk {
     max-width: 100%;
     height: 100%;
 }
@@ -559,12 +559,12 @@ footer ul li a {
         width: 100%;
     }
 
-    #Desk {
+    .Desk {
         display: block;
     }
 
     
-    #mobile {
+    .mobile {
       display: none;
     }
 
@@ -614,7 +614,7 @@ footer ul li a {
         padding: 4em 0;
     }
 
-    .grid #mobile, .grid #Desk {
+    .grid .mobile, .grid .Desk {
         max-width: 100.5%;
         height: 100%;
     }
@@ -666,7 +666,7 @@ footer ul li a {
         padding: 2em  0;
     }
 
-    .grid #Desk {
+    .grid .Desk {
         width: 100%;
         height: 65vh;
     }
@@ -711,7 +711,7 @@ footer ul li a {
         width: 30px;
     }
 
-     .grid #Desk {
+     .grid .Desk {
         max-width: 100%;
     }
 

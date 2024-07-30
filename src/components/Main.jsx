@@ -15,8 +15,8 @@ export default function GridContainer() {
       <main className='main-grid'>
         <article className='grid--item-1'>
           <div className='img-container'>
-            <img src={ImageYellowMobile} alt="image-transform" id="mobile" />
-            <img src={ImageYellowDesk} alt="image-transform" id="Desk" />
+            <img src={ImageYellowMobile} alt="image-transform" className="mobile" />
+            <img src={ImageYellowDesk} alt="image-transform" className="Desk" />
           </div>
 
         </article>
@@ -32,8 +32,8 @@ export default function GridContainer() {
         </article>
         <article className='grid--item-3'>
           <div className='img-container'>
-            <img src={ImagePinkMobile} alt="image-transform" id="mobile" />
-            <img src={ImagePinkDesk} alt="image-transform" id="Desk" />
+            <img src={ImagePinkMobile} alt="image-transform" className="mobile" />
+            <img src={ImagePinkDesk} alt="image-transform" className="Desk" />
           </div>
         </article>
         <article className='grid--item-4 hi'>
@@ -47,8 +47,8 @@ export default function GridContainer() {
         </article>
           <article className='grid--item-5'>
             <div className='img-container'>
-              <img src={ImageGreenMobile} alt="image-transform" id="mobile" />
-              <img src={ImageGreenDesk} alt="image-transform" id="Desk" />
+              <img src={ImageGreenMobile} alt="image-transform" className="mobile" />
+              <img src={ImageGreenDesk} alt="image-transform" className="Desk" />
 
               <section className='transform--info info1'>
               <h3 className='transform--info--title'> Graphic design</h3>
@@ -61,8 +61,8 @@ export default function GridContainer() {
           </article>
           <article className='grid--item-6'>
             <div className='img-container'>
-              <img src={ImageBlueMobile} alt="image-transform" id="mobile" />
-              <img src={ImageBlueDesk} alt="image-transform" id="Desk" />
+              <img src={ImageBlueMobile} alt="image-transform" className="mobile" />
+              <img src={ImageBlueDesk} alt="image-transform" className="Desk" />
               <section className='transform--info info2'>
               <h3 className='transform--info--title'>Photography</h3>
               <p className='transform--info-sub-text'>Increase your credibility by getting the most stunning, high-quality photos that improve your business image.
